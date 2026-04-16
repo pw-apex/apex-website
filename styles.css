@@ -52,7 +52,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;padding:0;
 .nav{position:sticky;top:0;z-index:50;background:rgba(8,9,10,.72);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--border-subtle)}
 .nav-inner{display:flex;align-items:center;height:56px}
 .nav-logo{margin-right:auto}
-.nav-logo img{height:22px;width:auto}
+.nav-logo img{height:32px;width:auto}
 .nav-center{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:4px}
 .nav-link{display:inline-flex;align-items:center;height:28px;padding:0 10px;font-size:13px;font-weight:510;color:var(--text-3);border-radius:var(--r-6);letter-spacing:-.005em;transition:color .15s,background .15s}
 .nav-link:hover{color:var(--text);background:rgba(255,255,255,.04)}
