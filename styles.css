@@ -349,6 +349,8 @@ footer{border-top:1px solid var(--border-subtle);padding:64px 0 32px;background:
 .book-side h3{margin:0 0 8px;font-size:16px;font-weight:590;color:var(--text);letter-spacing:-.012em}
 .book-side .item{padding:20px;background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:var(--r-12)}
 .book-side .item p{margin:0;font-size:14px;color:var(--text-3);line-height:1.55}
+.book-embed-frame{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:var(--r-12);overflow:hidden}
+.book-embed-frame iframe{display:block;width:100%;height:600px;border:0}
 
 /* Sub-page CTA (smaller than home) */
 .subcta{padding:96px 32px;text-align:center;border-top:1px solid var(--border-subtle);background:radial-gradient(700px 400px at 50% 0%,rgba(94,106,210,.14),transparent 65%),var(--bg)}
