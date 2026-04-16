@@ -213,7 +213,7 @@ section.process{padding:112px 0;border-top:1px solid var(--border-subtle)}
 /* ---- FOOTER ---- */
 footer{border-top:1px solid var(--border-subtle);padding:64px 0 32px;background:var(--bg-deep)}
 .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
-.foot-brand img{height:20px;margin-bottom:14px}
+.foot-brand img{height:32px;margin-bottom:14px}
 .foot-brand p{color:var(--text-4);font-size:13px;line-height:1.55;max-width:32ch;margin:0}
 .foot-col h5{font-family:var(--f-mono);font-size:11px;font-weight:400;text-transform:uppercase;letter-spacing:.08em;color:var(--text-4);margin:0 0 14px}
 .foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
