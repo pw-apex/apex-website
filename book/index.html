@@ -52,7 +52,7 @@
 
   Cal.ns.demo("inline", {
     elementOrSelector:"#my-cal-inline-demo",
-    config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+    config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"},
     calLink: "apex-fractional/demo",
   });
 
@@ -60,8 +60,17 @@
     "hideEventTypeDetails": false,
     "layout": "month_view",
     "theme": "dark",
+    "styles": { "body": { "background": "#08090a" } },
     "cssVarsPerTheme": {
       "dark": {
+        "cal-brand": "#5e6ad2",
+        "cal-bg-muted": "#08090a",
+        "cal-bg-emphasis": "#191a1b",
+        "cal-bg": "#0f1011",
+        "cal-border": "rgba(255,255,255,.08)",
+        "cal-border-subtle": "rgba(255,255,255,.05)"
+      },
+      "light": {
         "cal-brand": "#5e6ad2",
         "cal-bg-muted": "#08090a",
         "cal-bg-emphasis": "#191a1b",
