@@ -467,3 +467,68 @@ footer{border-top:1px solid var(--border-subtle);padding:64px 0 32px;background:
 .ob-log .tick{color:var(--emerald)}
 .ob-log .wait{color:#d4a843}
 .ob-log .dim{color:var(--text-4);font-size:10px;margin-top:4px}
+
+/* ============================================================ */
+/* About page                                                    */
+/* ============================================================ */
+
+/* Gradient text span — indigo → violet → soft pink */
+.grad-text{
+  background:linear-gradient(90deg,#5e6ad2 0%,#7170ff 45%,#e0a5ff 100%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+
+/* About hero — centered variant of .hero */
+.about-hero{padding:128px 0 96px;text-align:center}
+.about-hero .hero-inner{max-width:1100px;margin:0 auto}
+.about-hero h1{margin:0 0 28px;font-weight:600}
+.about-hero .sub{margin:0 auto;max-width:64ch;text-align:center}
+@media(max-width:640px){.about-hero{padding:80px 0 64px}}
+
+/* Team section */
+.team-section{padding:96px 0 128px;border-top:1px solid var(--border-subtle);text-align:center}
+.team-section h2{
+  font-size:clamp(32px,4.6vw,52px);font-weight:600;letter-spacing:-.022em;
+  line-height:1.1;margin:0 auto 64px;max-width:22ch;
+}
+.team-row{display:flex;justify-content:center;align-items:flex-start;gap:24px;flex-wrap:wrap}
+.team-member{position:relative;display:flex;flex-direction:column;align-items:center}
+.team-avatar{
+  width:96px;height:96px;border-radius:9999px;
+  background:linear-gradient(135deg,var(--surface-2),var(--panel));
+  border:1px solid var(--border);
+  overflow:hidden;cursor:default;
+  transition:transform .2s ease,border-color .2s ease;
+}
+.team-avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.team-member:hover .team-avatar{transform:translateY(-2px);border-color:rgba(255,255,255,.18)}
+
+/* Tooltip pill — sits above the avatar on hover */
+.team-tip{
+  position:absolute;left:50%;bottom:calc(100% + 8px);
+  transform:translateX(-50%) translateY(4px);
+  background:#fff;color:#08090a;
+  padding:8px 14px;border-radius:12px;
+  box-shadow:0 8px 24px rgba(0,0,0,.35);
+  white-space:nowrap;text-align:center;
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .18s ease,transform .18s ease,visibility .18s;
+}
+.team-tip .t-name{font-size:14px;font-weight:600;letter-spacing:-.01em;line-height:1.2}
+.team-tip .t-role{font-size:12px;color:#5a6068;font-weight:400;line-height:1.2;margin-top:2px}
+.team-member:hover .team-tip,
+.team-member:focus-within .team-tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+
+@media(max-width:640px){
+  .team-row{gap:16px}
+  .team-avatar{width:72px;height:72px}
+}
+
+/* Gradient button modifier for the CTA */
+.btn-grad{
+  background:linear-gradient(90deg,#5e6ad2 0%,#7170ff 50%,#b38bff 100%);
+  color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 8px 20px rgba(94,106,210,.25);
+  height:48px;padding:0 24px;font-size:15px;font-weight:510;
+}
+.btn-grad:hover{filter:brightness(1.08);background:linear-gradient(90deg,#5e6ad2 0%,#7170ff 50%,#b38bff 100%)}
