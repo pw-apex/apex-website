@@ -349,18 +349,9 @@ footer{border-top:1px solid var(--border-subtle);padding:64px 0 32px;background:
 .book-side h3{margin:0 0 8px;font-size:16px;font-weight:590;color:var(--text);letter-spacing:-.012em}
 .book-side .item{padding:20px;background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:var(--r-12)}
 .book-side .item p{margin:0;font-size:14px;color:var(--text-3);line-height:1.55}
-.book-embed-frame{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:var(--r-12);overflow:hidden;display:flex;flex-direction:column}
-.book-embed-frame .embed-chrome{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-bottom:1px solid var(--border-subtle);background:rgba(255,255,255,.015)}
-.book-embed-frame .embed-chrome .overline{display:inline-flex;align-items:center;gap:8px;color:var(--text-3);margin:0}
-.book-embed-frame .embed-chrome .overline .dot{width:6px;height:6px;border-radius:9999px;background:var(--emerald);box-shadow:0 0 0 3px rgba(16,185,129,.12)}
-.book-embed-frame iframe{display:block;width:100%;height:720px;border:0;background:#fff}
+.book-embed-frame{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:var(--r-12);overflow:hidden}
+.book-embed-frame iframe{display:block;width:100%;height:720px;border:0;background:#08090a;filter:invert(1) hue-rotate(180deg);color-scheme:light}
 @media(max-width:780px){.book-embed-frame iframe{height:600px}}
-
-.book-side .side-list{list-style:none;margin:0;padding:0;margin-top:6px;display:flex;flex-direction:column;gap:8px}
-.book-side .side-list li{position:relative;padding-left:14px;font-size:14px;color:var(--text-3);line-height:1.5}
-.book-side .side-list li::before{content:"";position:absolute;left:0;top:9px;width:4px;height:4px;border-radius:9999px;background:var(--violet)}
-.book-side .side-link{color:var(--violet);font-weight:510;text-decoration:underline;text-decoration-color:rgba(113,112,255,.4);text-underline-offset:3px;transition:text-decoration-color .15s}
-.book-side .side-link:hover{text-decoration-color:var(--violet)}
 
 /* Sub-page CTA (smaller than home) */
 .subcta{padding:96px 32px;text-align:center;border-top:1px solid var(--border-subtle);background:radial-gradient(700px 400px at 50% 0%,rgba(94,106,210,.14),transparent 65%),var(--bg)}
