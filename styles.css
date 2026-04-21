@@ -298,6 +298,17 @@ footer{border-top:1px solid var(--border-subtle);padding:64px 0 32px;background:
 .pull-quote .name{font-size:14px;font-weight:510;color:var(--text-2)}
 .pull-quote .role{font-size:13px;color:var(--text-4)}
 
+/* Case-study tables */
+.cs-table-wrap{overflow-x:auto;margin:24px 0}
+.cs-table{width:100%;border-collapse:collapse;font-size:14px}
+.cs-table th,.cs-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--border-subtle);vertical-align:top}
+.cs-table th{font-family:var(--f-mono);font-size:11px;font-weight:400;text-transform:uppercase;letter-spacing:.08em;color:var(--text-4);border-bottom:1px solid var(--border)}
+.cs-table td{color:var(--text-3);line-height:1.55}
+.cs-table td strong{color:var(--text-2);font-weight:510}
+.cs-table tr:last-child td{border-bottom:none}
+.cs-table td.num,.cs-table th.num{text-align:right;font-variant-numeric:tabular-nums}
+.cs-table tr.highlight td{background:rgba(94,106,210,.06)}
+
 /* About: two-column layout */
 .two-col{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start}
 @media(max-width:960px){.two-col{grid-template-columns:1fr;gap:32px}}
